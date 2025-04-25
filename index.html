@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escáner de Códigos de Barras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Escáner de Códigos de Barras</h1>
+  <div id="scanner-container">
+    <video id="scanner-preview"></video>
+  </div>
+  <div id="result">Código escaneado: <span id="barcode-result">Esperando...</span></div>
+
+  <script src="https://unpkg.com/@ericblade/quagga2@1.2.6/dist/quagga.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
