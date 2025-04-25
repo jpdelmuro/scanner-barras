@@ -1,21 +1,27 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-  background-color: #f7f7f7;
+#scanner-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border: 4px solid #333;   /* <-- Aquí el borde */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 4 / 3; /* Mantiene proporción estándar de cámara */
+  background-color: #000;
 }
 
-
-
-#scanner-preview {
+#video {
   width: 100%;
   height: auto;
-  transform: scaleX(-1); /* Invertido como espejo */
+  display: block;
+  object-fit: contain;
+  border: none; /* Quita el borde de aquí */
 }
 
 
 #result {
   margin-top: 20px;
   font-size: 1.5em;
-  color: #222;
 }
