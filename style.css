@@ -12,7 +12,15 @@ body {
   border: 4px solid #333;
   border-radius: 10px;
   overflow: hidden;
+  display: inline-block;
 }
+
+#scanner-preview {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 #scanner-preview {
   width: 100%;
